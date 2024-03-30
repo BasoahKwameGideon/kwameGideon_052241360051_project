@@ -1,0 +1,166 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Faculty Website</title>
+  <style>
+    form {
+    max-width: 500px;
+    margin: auto;
+    background-color:bisque;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow:gold;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+
+}
+select,option{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green color, you can change it */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+    background-color: greenyellow;
+}
+h1 {
+    background-color: aquamarine;
+    text-overflow: ellipsis;
+    text-shadow: 0cqh;
+    text-align: center;
+
+}
+h2 {
+    background-color: rgb(101, 143, 235);
+    text-overflow: ellipsis;
+    text-shadow: 0cqh;
+    text-align: center;
+
+}
+body {
+    background-color: rgb(198, 215, 224);
+    text-overflow: ellipsis;
+    text-shadow: 0cqh;
+    text-align: center;
+}
+ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex;
+}
+ul li a {
+  text-decoration: none; 
+  color: #faebeb; 
+}
+.list-container {
+  display: flex; 
+  justify-content: center;
+  background-color: #6ab5e7;
+  padding: 20px; 
+  border-radius: 8px; 
+  max-width: 600px;
+  margin: 0 auto;  
+}
+ul li {
+  margin-right: 10px; 
+  padding-right: 10px; 
+  border-right: 2px solid #c4f568; 
+}
+ul li:last-child {
+  border-right: none; 
+}
+
+
+</style>  
+    
+</head>
+<body>
+    <header>
+        <img src = "C:\xampp\htdocs\project\project\img\download.jpeg" alt = "techworld" width="290" height = "100">
+        <h1> 
+            
+            Welcome to the faculty of technology
+        </h1>
+        <nav>
+            <div class="list-container">
+            <ul>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="timetables.html">Timetables</a></li>
+                <li><a href="payments.html">Payments</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+        <h2>About Us</h2>
+        <p>Welcome to faculty of technolgy`s  website. Explore the various sections to get information about faculty, departments, timetables, and payments.</p>
+        <h3>Goals of the technology world</h3>
+        <p>Our main aim us to help the various people from different aspects of the world to become familair with technology</p>
+        <br>
+        <p> Computer literacy among individuals especially africa is the major goal </p>
+        <h4> will you like to enroll?
+            <br>
+            if yes fill the forms below to register for a program
+        </h4>
+        <form action="register_form.php" method="post">
+            <label for = "name ">your name </label>
+            <input type ="text "id = "Name"name ="Name" required>
+
+            <label for = "qualification"> your qualification</label>
+            <select id = "qualification" name = "qualification">
+
+                <option value = ""></option>
+                <option value = "wascce">wascce</option>
+                <option value = "novdec">novdec</option>
+                <option value = "level a">form4</option>
+            </select>
+
+            <label for = "index">index for selected qualification</label>
+            <input type = "int" name = "id" required>
+
+            <label for = "contact"> contact</label>
+            <input type = "int" name = "contact">
+
+            <button type ="submit" > SumbitButton:</button>
+        </form>
+        <br>
+
+     
+    <footer>
+        <a href = "www.techword.com">visit our  official webpage</a>
+        <p>&copy; 2024 Faculty Website</p>
+    </footer>   
+          
+        
+
+
+</body>
+</html>
